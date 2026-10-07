@@ -35,7 +35,7 @@ export function Newsletter() {
   }
 
   return (
-    <div className="news">
+    <div className="news" id="newsletter">
       <p>Get news about Saturn and new things Zarah can do.</p>
       <form noValidate onSubmit={submit}>
         <div className="field">
