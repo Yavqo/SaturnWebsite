@@ -8,12 +8,12 @@ import { Reveal } from "./Reveal";
 const platforms: { name: string; icon: IconName; note: string; href?: string }[] = [
   {
     name: "Mac",
-    icon: "laptop",
+    icon: "apple",
     note: "macOS 12 or later",
     href: "https://5ohxxy1roe.ucarecd.net/612a7140-e160-4256-8c56-0cdf0ca5eb36/Saturn.dmg",
   },
-  { name: "Windows", icon: "grid", note: "Windows 10 or later" },
-  { name: "Linux", icon: "terminal", note: ".deb and .rpm packages" },
+  { name: "Windows", icon: "windows", note: "Windows 10 or later" },
+  { name: "Linux", icon: "linux", note: ".deb and .rpm packages" },
 ];
 
 const defaultNote = (
