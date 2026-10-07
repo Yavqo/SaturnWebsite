@@ -4,7 +4,7 @@ import { HeroVideo } from "@/components/HeroVideo";
 import { Icon, type IconName } from "@/components/Icon";
 import { Reveal } from "@/components/Reveal";
 import { StackDots } from "@/components/StackDots";
-import { AssistantCard, BrowserMock, MiniRows, type Row } from "@/components/Visuals";
+import { AssistantCard, MiniRows, type Row } from "@/components/Visuals";
 import { ZarahDemo } from "@/components/ZarahDemo";
 
 const summaryRows: Row[] = [
@@ -48,7 +48,7 @@ export default function Home() {
     <main id="main">
       {/* Stacked hero panels: each one slides over the last as you scroll */}
       <div className="stack hero" id="top">
-        <section className="panel on-dark" id="panel-1" aria-labelledby="p1">
+        <section className="panel panel-video on-dark" id="panel-1" aria-labelledby="p1">
           <HeroVideo />
           <p className="eyebrow">Introducing Saturn</p>
           <h1 id="p1">The browser that browses with you</h1>
@@ -56,7 +56,6 @@ export default function Home() {
             <a className="btn btn-primary btn-lg" href="#download">Download</a>
             <a className="btn btn-secondary btn-lg" href="#zarah">Learn more</a>
           </div>
-          <div className="panel-visual"><BrowserMock /></div>
         </section>
 
         <section className="panel on-dark" id="panel-2" aria-labelledby="p2">
