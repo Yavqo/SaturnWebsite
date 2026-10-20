@@ -14,7 +14,7 @@ const topics: Topic[] = [
     title: "Getting started",
     blurb: "Install and set up",
     articles: [
-      art("How do I install Saturn?", "Download the installer for your computer from the Download section on the home page, open it and follow the steps. Saturn is free."),
+      art("How do I install Saturn?", "Use the Download button in the Download section on the home page. It takes you to the Saturn page on Yavqo Apps, where you can get the installer and follow the steps. Saturn is free."),
       art("How do I import my bookmarks and passwords?", "During setup Saturn offers to import from other browsers. You can pick what to bring over: bookmarks, passwords and history."),
       art("Can I use my Chromium extensions?", "No. Saturn does not support Chromium extensions. Once the beta is over, Saturn will have its own extensions instead."),
     ],

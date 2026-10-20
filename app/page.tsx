@@ -26,9 +26,6 @@ const benefits: { icon: IconName; title: string; text: string }[] = [
 ];
 
 const specs: [string, string][] = [
-  ["Mac", "macOS 12 or later"],
-  ["Windows", "Windows 10 or later (coming soon)"],
-  ["Linux", ".deb and .rpm packages (coming soon)"],
   ["Assistant", "Zarah, built into the browser"],
   ["Import from", "Chrome, Safari and Firefox: bookmarks, passwords and history"],
   ["Extensions", "Chromium extensions are not supported. Saturn will have its own extensions after the beta."],

@@ -668,3 +668,4 @@ h1, h2, h3 { text-wrap: balance; font-weight: 500; letter-spacing: normal; }
 .panel > *:not(.panel-bg) { position: relative; z-index: 1; }
 .panel-visual { position: relative; }
 .panel-video { justify-content: center; padding-top: var(--y-header-h); padding-bottom: var(--y-header-h); }
+.buy-panel .btn-block { margin-top: 24px; }

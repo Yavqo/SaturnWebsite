@@ -5,16 +5,7 @@ import { useState } from "react";
 import { Icon, Logo, type IconName } from "./Icon";
 import { AssistantCard, BrowserMock, MiniRows } from "./Visuals";
 
-const platforms: { name: string; icon: IconName; note: string; href?: string }[] = [
-  {
-    name: "Mac",
-    icon: "apple",
-    note: "macOS 12 or later",
-    href: "https://5ohxxy1roe.ucarecd.net/612a7140-e160-4256-8c56-0cdf0ca5eb36/Saturn.dmg",
-  },
-  { name: "Windows", icon: "windows", note: "Windows 10 or later" },
-  { name: "Linux", icon: "linux", note: ".deb and .rpm packages" },
-];
+const DOWNLOAD_URL = "https://apps.yavqo.com/product/saturn";
 
 const views = [
   { id: "browse", label: "Browse", icon: "globe" as IconName },
@@ -24,7 +15,6 @@ const views = [
 
 /** Product-page style block: gallery on the left, sticky "buy" panel on the right. */
 export function BuyPanel() {
-  const [platform, setPlatform] = useState(platforms[0]);
   const [view, setView] = useState("browse");
 
   return (
@@ -63,23 +53,7 @@ export function BuyPanel() {
         <p className="price">Free</p>
         <p className="buy-fin">Free to download and use.</p>
 
-        <div className="swatches" role="radiogroup" aria-label="Computer">
-          {platforms.map((p) => (
-            <button key={p.name} type="button" role="radio" aria-checked={platform.name === p.name} aria-label={p.name} className="swatch" onClick={() => setPlatform(p)}>
-              <Icon name={p.icon} />
-            </button>
-          ))}
-        </div>
-        <p className="opt-label"><strong>Computer:</strong> {platform.name}</p>
-
-        <div className="opt-row"><span>Requirements</span><span>{platform.note}</span></div>
-        <p className="avail">{platform.href ? "Available now" : "Coming soon"}</p>
-
-        {platform.href ? (
-          <a className="btn btn-primary btn-block" href={platform.href} download="Saturn.dmg" rel="noopener">Download for {platform.name}</a>
-        ) : (
-          <a className="btn btn-primary btn-block" href="#newsletter">Tell me when it is ready</a>
-        )}
+        <a className="btn btn-primary btn-block" href={DOWNLOAD_URL} rel="noopener">Download Saturn</a>
         <p className="buy-fine">By downloading, you agree to the <a href="#">Terms</a> and <Link href="/privacy-policy">Privacy Policy</Link>.</p>
 
         <ul className="benefits-row">
